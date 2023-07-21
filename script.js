@@ -57,7 +57,7 @@ function renderGame() {
 }
 
 function newCard() {
-  if (isAlive && hasBlackJack === false) {
+  if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard();
     sum += card;
     cards.push(card);
@@ -65,10 +65,5 @@ function newCard() {
   }
 }
 
-function getRandomCards() {}
 
-function restart() {
-  //   sum = 0;
-  //   message = "Want to play round?";
-  //   renderGame();
-}
+
